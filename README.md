@@ -33,16 +33,22 @@ Vite uses a relative base (`./`) so built assets resolve beneath the repository 
 - Memories and gallery captions: `src/data/gallery.ts`
 - Activities and homepage sample counts: `src/data/activities.ts`
 - Chapter and group descriptions, shown in the Members page: `src/data/groups.ts`
-- Home featured profiles and Members page founder, core member and volunteer lists: `src/data/members.ts`
+- Home featured profiles and Members page directory: `src/data/members.ts`
+- Social profile URLs, RSS feed and Google Forms links: `src/data/community-links.ts`
+- Homepage and event/group media: `src/data/activities.ts`, `src/data/events.ts`, and `src/data/groups.ts`
 
-Event entries in this starter are layout examples with unconfirmed dates and locations. Replace them with approved event details before publishing. The homepage counts are illustrative planning values; replace them with community-confirmed totals. Member profiles should use current names and roles approved for public display. Avoid publishing personal phone numbers or email addresses without explicit consent. `coreMembers` feeds both the home spotlight and Core Members directory section; `founderMembers` and `volunteers` fill their own sections. Founder data uses `name`, `profession`, `idea`, and optional `photo`; core member data uses `name`, `profession`, `about`, and optional `photo`; volunteers use `name` and optional `photo`. Put portrait files in `public/images/members/` and set `photo` to the filename; missing photos fall back to initials. Replace the demo names and profession placeholders with member-approved information before publishing.
+Event entries in this starter are layout examples with unconfirmed dates and locations. Replace them with approved event details before publishing. Homepage counts are illustrative; replace them with confirmed totals. Member profiles should use current names and roles approved for public display. Avoid publishing personal contact information without explicit consent. Member data uses `title` (an array such as `['Founder', 'Core Member']`), `profession`, optional `about`, optional `idea`, and optional `photo`; `idea` is displayed when `Founder` is one of the titles. `members` feeds the home spotlight and Members directory, while `volunteers` fills its own section. Put portrait files in `public/images/members/`; missing photos fall back to initials.
+
+Activities, events and groups accept an optional `media` object with `type: 'image' | 'video' | 'embed'`, `src`, and optional `alt` or `poster`. For photos, `src` points to a local file in `public/images/`. For a self-hosted video, use a short compressed MP4/WebM and set `poster` to a local thumbnail; it uses `preload="none"`. For YouTube/Vimeo, use `type: 'embed'` with the provider's embed URL to avoid adding large video files to the GitHub Pages repository.
+
+Public Facebook, X, and RSS links from the existing site are prefilled in `src/data/community-links.ts`; add or remove profile URLs there. For Google Forms, paste the public form link into `googleFormUrl` and the embed URL from Google Forms **Send → Embed HTML** into `googleFormEmbedUrl`. The site is static, so responses are collected by Google Forms and no server or API key is required.
 
 ## Replace the artwork
 
-Replace the SVG illustrations in `public/images/` with photographs the community owns or has permission to publish. Update matching image paths in `src/data/images.ts`, `src/data/events.ts`, `src/data/gallery.ts` and `src/App.tsx` if you use different filenames. Gallery images use native lazy loading. Keep descriptive alt text for meaningful images and empty alt text for decorative art.
+Replace the temporary SVG illustrations in `public/images/` with community photographs that people have approved for publication. Update matching image paths in `src/data/images.ts`, `src/data/activities.ts`, `src/data/events.ts`, `src/data/groups.ts`, `src/data/gallery.ts` and `src/App.tsx` if you use different filenames. Gallery images use native lazy loading. Keep descriptive alt text for meaningful images and empty alt text for decorative art.
 
 See [IMAGE_GUIDE.md](./IMAGE_GUIDE.md) for image sources, consent and credits, file-size guidance, and when an external CDN may be useful.
 
 ## Contact details
 
-The contact page intentionally has no email, phone number, or working form until the community confirms its preferred public contact. Add an approved `mailto:` or `tel:` link in `src/App.tsx`, or document and configure a static form service. There is no fake form submission or backend.
+The contact page embeds the Google Form when `googleFormEmbedUrl` is configured. Social and RSS links are configured in `src/data/community-links.ts`.

@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/data/activities.ts","./src/data/events.ts","./src/data/gallery.ts","./src/data/groups.ts","./src/data/images.ts","./src/data/members.ts"],"version":"5.9.3"}
+{"root":["./src/app.tsx","./src/main.tsx","./src/data/activities.ts","./src/data/community-links.ts","./src/data/events.ts","./src/data/gallery.ts","./src/data/groups.ts","./src/data/images.ts","./src/data/members.ts"],"version":"5.9.3"}

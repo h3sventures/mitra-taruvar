@@ -1,12 +1,17 @@
-export const activities = [
-  { icon: '✳', title: 'Community & friendship', description: 'Bring people together across backgrounds through shared gatherings, games and everyday kindness.' },
-  { icon: '♡', title: 'Health & wellness', description: 'Encourage health awareness, good hygiene and practical care for families and neighbours.' },
-  { icon: '❋', title: 'Culture & celebration', description: 'Share festivals, folk arts and traditions while making room for every family’s culture.' },
-  { icon: '↗', title: 'Social responsibility', description: 'Offer thoughtful, practical support to people facing difficult moments.' },
-  { icon: '⌂', title: 'Education & awareness', description: 'Create opportunities for learning, training and knowledge that people can use.' },
-  { icon: '❧', title: 'Environment', description: 'Make local care for the environment tangible through conservation and water awareness.' },
-  { icon: '◉', title: 'Women & youth', description: 'Open paths for women’s participation, shared skills and young people’s ideas.' },
-  { icon: '↟', title: 'Civic awareness', description: 'Help people understand their rights, responsibilities and ways to take part in community life.' },
+import { communityImage } from './images';
+import type { MediaAsset } from './events';
+
+export type CommunityActivity = { icon: string; title: string; description: string; image: string; media?: MediaAsset };
+
+export const activities: CommunityActivity[] = [
+  { icon: '✳', title: 'Community & friendship', image: communityImage('gathering'), description: 'Bring people together across backgrounds through shared gatherings, games and everyday kindness.' },
+  { icon: '♡', title: 'Health & wellness', image: communityImage('wellness'), description: 'Encourage health awareness, good hygiene and practical care for families and neighbours.' },
+  { icon: '❋', title: 'Culture & celebration', image: communityImage('festival'), description: 'Share festivals, folk arts and traditions while making room for every family’s culture.' },
+  { icon: '↗', title: 'Social responsibility', image: communityImage('community'), description: 'Offer thoughtful, practical support to people facing difficult moments.' },
+  { icon: '⌂', title: 'Education & awareness', image: communityImage('community'), description: 'Create opportunities for learning, training and knowledge that people can use.' },
+  { icon: '❧', title: 'Environment', image: communityImage('outdoors'), description: 'Make local care for the environment tangible through conservation and water awareness.' },
+  { icon: '◉', title: 'Women & youth', image: communityImage('gathering'), description: 'Open paths for women’s participation, shared skills and young people’s ideas.' },
+  { icon: '↟', title: 'Civic awareness', image: communityImage('community'), description: 'Help people understand their rights, responsibilities and ways to take part in community life.' },
 ];
 
 export const workAreas = [
@@ -20,9 +25,9 @@ export const workAreas = [
   { icon: '❋', title: 'Women & Youth', description: 'Women-led participation, shared skills and youth ideas that strengthen community life.' },
 ];
 
-// Illustrative planning values only. Replace them with community-confirmed totals.
+// Community totals shown in the home snapshot.
 export const communityStats = [
   { value: '12+', label: 'years of togetherness' },
-  { value: '150+', label: 'friends & families' },
+  { value: '40+', label: 'families in our community' },
   { value: '40+', label: 'shared gatherings' },
 ];

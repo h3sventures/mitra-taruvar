@@ -1,7 +1,7 @@
 export type MemberProfile = {
   id: string;
   name: string;
-  title: 'Founder' | 'Core Member';
+  title: string[];
   profession: string;
   about?: string;
   idea?: string;
@@ -18,35 +18,35 @@ export type VolunteerProfile = {
 export const members: MemberProfile[] = [{
   id: 'core-1',
   name: 'Jane Doe',
-  title: 'Core Member',
+  title: ['Core Member'],
   profession: 'Profession to be added',
   about: 'Add a short introduction about this core member and their contributions.',
   photo: 'jane-doe.svg',
 }, {
   id: 'core-2',
   name: 'John Smith',
-  title: 'Core Member',
+  title: ['Core Member'],
   profession: 'Profession to be added',
   about: 'Add a short introduction about this core member and their contributions.',
   photo: 'john-smith.jpg',
 }, {
   id: 'founder-1',
   name: 'Founder Name',
-  title: 'Founder',
+  title: ['Founder'],
   profession: 'Profession to be added',
   idea: 'Add a short description of the founder\'s idea and vision.',
   photo: 'founder-name.jpg',
 }, {
   id: 'founder-2',
   name: 'Another Founder',
-  title: 'Founder',
+  title: ['Founder'],
   profession: 'Profession to be added',
   idea: 'Add a short description of the founder\'s idea and vision.',
   photo: 'another-founder.jpg',
 }, {
   id: 'founder-3',
   name: 'Yet Another Founder',
-  title: 'Founder',
+  title: ['Founder'],
   profession: 'Profession to be added',
   idea: 'Add a short description of the founder\'s idea and vision.',
   photo: 'yet-another-founder.jpg',
