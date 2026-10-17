@@ -14,62 +14,50 @@ export type VolunteerProfile = {
   photo?: string;
 };
 
-// Replace demo details with current profiles approved for public display.
-export const members: MemberProfile[] = [{
-  id: 'core-1',
-  name: 'Jane Doe',
-  title: ['Core Member'],
-  profession: 'Profession to be added',
-  about: 'Add a short introduction about this core member and their contributions.',
-  photo: 'jane-doe.svg',
-}, {
-  id: 'core-2',
-  name: 'John Smith',
-  title: ['Core Member'],
-  profession: 'Profession to be added',
-  about: 'Add a short introduction about this core member and their contributions.',
-  photo: 'john-smith.jpg',
-}, {
-  id: 'founder-1',
-  name: 'Founder Name',
-  title: ['Founder'],
-  profession: 'Profession to be added',
-  idea: 'Add a short description of the founder\'s idea and vision.',
-  photo: 'founder-name.jpg',
-}, {
-  id: 'founder-2',
-  name: 'Another Founder',
-  title: ['Founder'],
-  profession: 'Profession to be added',
-  idea: 'Add a short description of the founder\'s idea and vision.',
-  photo: 'another-founder.jpg',
-}, {
-  id: 'founder-3',
-  name: 'Yet Another Founder',
-  title: ['Founder'],
-  profession: 'Profession to be added',
-  idea: 'Add a short description of the founder\'s idea and vision.',
-  photo: 'yet-another-founder.jpg',
-}];
+// Public directory fields only; contact details and birth dates are omitted.
+export const members: MemberProfile[] = [
+  { id: 'member-01', name: "Pradip Kumar Singh", title: ["Founder", "Core Member"], profession: "Service" },
+  { id: 'member-02', name: "Ashwani Kumar Singh", title: ["Founder"], profession: "Service" },
+  { id: 'member-03', name: "Brij Bhushan Singh", title: ["Founder"], profession: "Service" },
+  { id: 'member-04', name: "Chandan Kumar Singh", title: ["Founder", "Core Member"], profession: "Service" },
+  { id: 'member-05', name: "Jitendra", title: ["Founder"], profession: "Service" },
+  { id: 'member-06', name: "Abhay Kumar Singh", title: ["Founder"], profession: "Business" },
+  { id: 'member-07', name: "Sandip Kumar Singh", title: ["Founder", "Core Member"], profession: "Service" },
+  { id: 'member-08', name: "Shiv Ram Pathak", title: ["Founder"], profession: "Service" },
+  { id: 'member-09', name: "Anand Kumar Pathak", title: ["Founder", "Core Member"], profession: "Service" },
+  { id: 'member-10', name: "Sonu Kumar", title: ["Founder", "Core Member"], profession: "Service" },
+  { id: 'member-11', name: "Vivek Kumar Singh", title: ["Founder"], profession: "Service" },
+  { id: 'member-12', name: "Budhimati Jha", title: ["Founder"], profession: "Advocate" },
+  { id: 'member-13', name: "Satish Kumar Singh", title: ["Core Member"], profession: "IT professional" },
+];
 
-export const volunteers: VolunteerProfile[] = [{
-  id: '1',
-  name: 'Volunteer Name',
-  photo: 'volunteer-name.jpg',
-}, {
-  id: '2',
-  name: 'Another Volunteer',
-  photo: 'another-volunteer.jpg',
-}, {
-  id: '3',
-  name: 'Yet Another Volunteer',
-  photo: 'yet-another-volunteer.jpg',
-}, {
-  id: '4',
-  name: 'One More Volunteer',
-  photo: 'one-more-volunteer.jpg',
-}, {
-  id: '5',
-  name: 'Final Volunteer',
-  photo: 'final-volunteer.jpg',
-}];
+export const volunteers: VolunteerProfile[] = [
+  { id: 'volunteer-01', name: "Uday Pal" },
+  { id: 'volunteer-02', name: "Prem Kumar" },
+  { id: 'volunteer-03', name: "Ravi N. Patel" },
+  { id: 'volunteer-04', name: "Pooja Mehra" },
+  { id: 'volunteer-05', name: "Ranjit Singh" },
+  { id: 'volunteer-06', name: "Rajesh Kumar" },
+  { id: 'volunteer-07', name: "Sunil Kumar Pathak" },
+  { id: 'volunteer-08', name: "Arvind Kumar Pankaj" },
+  { id: 'volunteer-09', name: "Kamlesh Kumar" },
+  { id: 'volunteer-10', name: "Niraj Kumar" },
+  { id: 'volunteer-11', name: "Minu Singh" },
+  { id: 'volunteer-12', name: "Bhagirath Singh" },
+  { id: 'volunteer-13', name: "Sanjay Paswan" },
+  { id: 'volunteer-14', name: "Praveen Kumar Mishra" },
+  { id: 'volunteer-15', name: "Sudhir Singh" },
+  { id: 'volunteer-16', name: "Nitesh Chandra Mishra" },
+  { id: 'volunteer-17', name: "Neha Dwivedi" },
+  { id: 'volunteer-18', name: "Dr. Sudha Sharma" },
+  { id: 'volunteer-19', name: "Raushan Kumar Thakur" },
+  { id: 'volunteer-20', name: "Keshav Kumar Mishra" },
+  { id: 'volunteer-21', name: "Jai Shankar Mishra" },
+  { id: 'volunteer-22', name: "Sanjeev Kumar Tiwari" },
+  { id: 'volunteer-23', name: "Neetu Singh" },
+  { id: 'volunteer-24', name: "Rahul Singh" },
+  { id: 'volunteer-25', name: "Manoj Kumar Singh" },
+  { id: 'volunteer-26', name: "Indu Prakash Singh" },
+  { id: 'volunteer-27', name: "Vijay Kumar Singh" },
+  { id: 'volunteer-28', name: "Manish Singh" },
+];
