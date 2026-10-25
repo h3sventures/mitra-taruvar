@@ -1,13 +1,13 @@
-import { communityImage } from './images';
+import { communityImage, communityPhoto } from './images';
 import type { MediaAsset } from './events';
 
 export type CommunityActivity = { icon: string; title: string; description: string; image: string; media?: MediaAsset };
 
 export const activities: CommunityActivity[] = [
-  { icon: '✳', title: 'Community & friendship', image: communityImage('gathering'), description: 'Bring people together across backgrounds through shared gatherings, games and everyday kindness.' },
-  { icon: '♡', title: 'Health & wellness', image: communityImage('wellness'), description: 'Encourage health awareness, good hygiene and practical care for families and neighbours.' },
-  { icon: '❋', title: 'Culture & celebration', image: communityImage('festival'), description: 'Share festivals, folk arts and traditions while making room for every family’s culture.' },
-  { icon: '↗', title: 'Social responsibility', image: communityImage('community'), description: 'Offer thoughtful, practical support to people facing difficult moments.' },
+  { icon: '✳', title: 'Community & friendship', image: communityPhoto('gathering-hero'), description: 'Bring people together across backgrounds through shared gatherings, games and everyday kindness.' },
+  { icon: '♡', title: 'Health & wellness', image: communityPhoto('health-camp-video-poster'), media: { type: 'video', src: `${import.meta.env.BASE_URL}videos/health-camp-interview.mp4`, poster: communityPhoto('health-camp-video-poster'), alt: 'A Mitra Taruvar health camp interview with volunteers' }, description: 'Encourage health awareness, good hygiene and practical care for families and neighbours.' },
+  { icon: '❋', title: 'Culture & celebration', image: communityPhoto('anniversary-gathering'), description: 'Share festivals, folk arts and traditions while making room for every family’s culture.' },
+  { icon: '↗', title: 'Social responsibility', image: communityPhoto('health-camp-recognition'), description: 'Offer thoughtful, practical support to people facing difficult moments.' },
   { icon: '⌂', title: 'Education & awareness', image: communityImage('community'), description: 'Create opportunities for learning, training and knowledge that people can use.' },
   { icon: '❧', title: 'Environment', image: communityImage('outdoors'), description: 'Make local care for the environment tangible through conservation and water awareness.' },
   { icon: '◉', title: 'Women & youth', image: communityImage('gathering'), description: 'Open paths for women’s participation, shared skills and young people’s ideas.' },

@@ -80,3 +80,11 @@ body{font-size:16px;line-height:1.7}
 
 @media(min-width:761px) and (max-width:1024px){.member-profile-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.member-profile-card{gap:12px;padding:15px;min-width:0}.member-avatar.avatar-large{width:72px;height:72px;font-size:20px}.profile-title-row{gap:6px}.profile-title-row h3{font-size:18px}.profile-badge{font-size:10px;padding:2px 8px}.member-profile-card .profile-profession{font-size:12px}.member-profile-card .profile-detail{font-size:12px;line-height:1.5}}
 @media(min-width:761px) and (max-width:1024px){.volunteer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.volunteer-card{min-width:0;gap:12px}.volunteer-card h3{min-width:0;overflow-wrap:anywhere}}
+
+/* Keep portraits circular even when profile-card text gets tight. */
+.member-avatar{width:43px;height:43px;min-width:43px;min-height:43px;flex:0 0 auto;aspect-ratio:1/1;overflow:hidden;border-radius:50%}
+.member-avatar img{display:block;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover;object-position:center 20%;border-radius:50%}
+.member-avatar.avatar-large{width:96px;height:96px;min-width:96px;min-height:96px}
+.member-avatar.avatar-small{width:72px;height:72px;min-width:72px;min-height:72px}
+@media(min-width:761px) and (max-width:1024px){.member-avatar.avatar-large{width:72px;height:72px;min-width:72px;min-height:72px}}
+@media(max-width:760px){.member-avatar.avatar-large{width:76px;height:76px;min-width:76px;min-height:76px}.member-avatar.avatar-small{width:58px;height:58px;min-width:58px;min-height:58px}}

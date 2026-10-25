@@ -11,7 +11,7 @@ Avoid using a stock photo as if it documents a real Mitra Taruvar event. Prefer 
 
 For this GitHub Pages site, keep approved image files in `public/images/`. Vite copies that directory to the built site, so no image-hosting account or runtime API is needed. The site currently references the illustrations in that directory through `communityImage()` in `src/data/images.ts` and in the page components in `src/App.tsx`.
 
-Community photos selected from the provided Mitra Taruvar photo folder are in `public/images/community/`. They are resized JPEG copies; the source originals remain outside the public site. The hero, memories, upcoming event cards and group cards use these local photos through `communityPhoto()` in `src/data/images.ts`. The supplied set documents outdoor family gatherings; use event specific photos when available so the images match health camps, festivals or other activities.
+Community photos selected from the provided Mitra Taruvar photo folders are in `public/images/community/`. Member portraits are in `public/images/members/`; the health camp interview is in `public/videos/`. They are resized/compressed web copies; the source originals remain outside the public site. The memories gallery includes the October 2026 health camp and October 2022 anniversary gathering. The Health & Wellness activity card includes a network-optimized MP4 of the health camp interview. Keep adding event-specific photos as they become available, and include only assets approved for public sharing.
 
 As the archive grows, organize it by purpose, for example:
 
@@ -23,7 +23,7 @@ public/images/
   members/
 ```
 
-Then update the paths in `src/data/events.ts`, `src/data/gallery.ts`, or `src/App.tsx`. Keep a small `image-credits.md` alongside your content with the image filename, photographer/source, license or consent status, and date approved.
+Then update the paths in `src/data/events.ts`, `src/data/gallery.ts`, `src/data/members.ts`, or `src/App.tsx`. Keep a small `image-credits.md` alongside your content with the image filename, photographer/source, license or consent status, and date approved.
 
 ## Prepare images for the web
 
