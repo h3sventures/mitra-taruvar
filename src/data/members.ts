@@ -16,19 +16,19 @@ export type VolunteerProfile = {
 
 // Public directory fields only; contact details and birth dates are omitted.
 export const members: MemberProfile[] = [
-  { id: 'member-01', name: "Pradip Kumar Singh", title: ["Founder", "Core Member"], profession: "Service" },
+  { id: 'member-01', name: "Pradip Kumar Singh", title: ["President", "Founder", "Core Committee"], profession: "Service", photo: 'pradip-kumar-singh.jpg' },
   { id: 'member-02', name: "Ashwani Kumar Singh", title: ["Founder"], profession: "Service" },
   { id: 'member-03', name: "Brij Bhushan Singh", title: ["Founder"], profession: "Service", photo: 'brij-bhushan-singh.jpg' },
-  { id: 'member-04', name: "Chandan Kumar Singh", title: ["Founder", "Core Member"], profession: "Service", photo: 'chandan-kumar-singh.jpg' },
+  { id: 'member-04', name: "Chandan Kumar Singh", title: ["Founder", "Core Committee"], profession: "IT Professional", photo: 'chandan-kumar-singh.jpg' },
   { id: 'member-05', name: "Jitendra", title: ["Founder"], profession: "Service" },
   { id: 'member-06', name: "Abhay Kumar Singh", title: ["Founder"], profession: "Business" },
-  { id: 'member-07', name: "Sandip Kumar Singh", title: ["Founder", "Core Member"], profession: "Service" },
+  { id: 'member-07', name: "Sandip Kumar Singh", title: ["Founder", "Core Committee"], profession: "IT Professional", photo: 'sandip-kumar-singh.jpg' },
   { id: 'member-08', name: "Shiv Ram Pathak", title: ["Founder"], profession: "Service" },
-  { id: 'member-09', name: "Anand Kumar Pathak", title: ["Founder", "Core Member"], profession: "Service", photo: 'anand-kumar-pathak.jpg' },
-  { id: 'member-10', name: "Sonu Kumar", title: ["Founder", "Core Member"], profession: "Service", photo: 'sonu-kumar.jpg' },
+  { id: 'member-09', name: "Anand Kumar Pathak", title: ["Founder", "Core Committee"], profession: "Service", photo: 'anand-kumar-pathak.jpg' },
+  { id: 'member-10', name: "Sonu Kumar", title: ["Founder", "Core Committee"], profession: "Service", photo: 'sonu-kumar.jpg' },
   { id: 'member-11', name: "Vivek Kumar Singh", title: ["Founder"], profession: "Service" },
   { id: 'member-12', name: "Budhimati Jha", title: ["Founder"], profession: "Advocate" },
-  { id: 'member-13', name: "Satish Kumar Singh", title: ["Core Member"], profession: "IT professional", photo: 'satish-kumar-singh.jpg' },
+  { id: 'member-13', name: "Satish Kumar Singh", title: ["Core Committee"], profession: "IT Professional", photo: 'satish-kumar-singh.jpg' },
 ];
 
 export const volunteers: VolunteerProfile[] = [

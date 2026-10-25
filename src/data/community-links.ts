@@ -5,8 +5,10 @@ export const communityLinks = {
   facebook: 'https://www.facebook.com/mitrataruvar',
   x: 'https://x.com/mitrataruvar',
   rss: 'https://mitrataruvar.wordpress.com',
-  youtube: '',
+  youtube: 'https://www.youtube.com/@mitrataruvar',
   whatsapp: '',
-  googleFormUrl: '',
-  googleFormEmbedUrl: '',
+  phone: '+91-9711113276',
+  email: 'mitrataruvar@gmail.com',
+  googleFormUrl: 'https://forms.gle/3EbwLPoQSMqp7TgA7',
+  googleFormEmbedUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdDNTqipCdKRxiVU91d_lQ_xPLe6ew60bmZZcx9wnj-OEfzVA/viewform?embedded=true',
 };
